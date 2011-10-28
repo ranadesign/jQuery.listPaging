@@ -1,0 +1,93 @@
+/**
+ * Style for kaelab demo page templates
+ *
+ * @author     RaNa design associates, inc.
+ * @copyright  2010 RaNa design associates, inc.
+ * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @version    Release: 1.0
+ * @since      2010-10-27
+ * @update     2010-11-01
+ */
+
+/**
+ * import reset style
+ */
+@import url("html5reset.css");
+
+
+body {
+	font-family: Meiryo, Arial, sans-serif;
+	padding: 1em 20px;
+	color: #333;
+	font-size: 14px;
+	line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom: 1em;
+}
+h1 {
+	font-size: 20px;
+}
+h2 {
+	font-size: 16px;
+}
+ul {
+	margin-bottom: 1em;
+}
+pre {
+	margin-bottom: 1em;
+	padding: .5em 1em;
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+
+
+/* style for element selector
+ * ----------------------------------------*/
+.listContainer {
+	position: relative;
+	overflow: hidden;
+	min-height: 10em;
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+	background-color: #EEF;
+}
+.listContainerInner { *zoom: 1; }
+.listContainerInner:after { content:""; display:block; clear:both; }
+.listContainer ul,
+.listContainer ol,
+.listContainer dl {
+	float: left;
+}
+.listContainer li {
+	list-style-position: inside;
+	margin-bottom: .25em;
+	border-bottom: 1px solid #CCC;
+}
+.listContainer .nav,
+.listContainer .navOverlay {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	min-height: 1em;
+	margin: 0;
+	padding: 0;
+}
+.listContainer .nav:after { content:""; display:block; clear:both; }
+.listContainer .navOverlay {
+	display: none;
+	z-index: 100;
+	background-image: url(data:image/gif;base64,AAA);
+}
+.listContainer .nav span {
+	display: block;
+	width: 50%;
+}
+.listContainer .nav span.prev {
+	float: left;
+}
+.listContainer .nav span.next {
+	float: right;
+	text-align: right;
+}
+
